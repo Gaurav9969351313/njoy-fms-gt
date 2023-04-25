@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage ('checkout'){
+        stage ('Code Checkout Process'){
             steps{
                 checkout scm
             }
@@ -33,5 +33,12 @@ pipeline {
                 bat "C:\\Users\\GauravTalele\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\pip.exe install -r requirements.txt"
             }
         }
+
+        stage('Deploy Prefect Flow') {
+            steps {
+                 bat "prefect --version"
+            }
+        }
+
     }
 }
