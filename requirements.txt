@@ -1,0 +1,6 @@
+boto3==1.26.75
+botocore==1.29.75
+pandas==1.5.2
+prefect==2.8.2
+requests==2.24.0
+snowflake-connector-python==2.8.1

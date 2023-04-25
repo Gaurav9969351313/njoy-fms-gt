@@ -1,0 +1,57 @@
+[{
+    "id": 1,
+    "job_name": "FILE_SCAN_NIELSEN",
+    "description": "Run Every Monday at 4:00 AM",
+    "workflow_to_invoke": "AWS_S3_FILE_CHECK",
+    "bucket_location": "com-njoy-data-transfers",
+    "folder_location": "transfers/nielsen/",
+    "file_prefix": "Njoy_Weekly_fct_",
+    "additional_filter_required": 1,
+    "additional_filter_value": "raw",
+    "expeceted_new_file_count" : 1,
+    "scan_type_category": "DAILY",
+    "cron_expression": "0  4  *  *  1"
+},
+{
+    "id": 2,
+    "job_name": "FILE_SCAN_NIELSEN",
+    "description": "Run Every Hour",
+    "workflow_to_invoke": "AWS_S3_FILE_CHECK",
+    "bucket_location": "com-njoy-data-transfers",
+    "folder_location": "transfers/nielsen/",
+    "file_prefix": "Njoy_Weekly_fct_",
+    "additional_filter_required": 1,
+    "additional_filter_value": "raw",
+    "expeceted_new_file_count" : 1,
+    "scan_type_category": "HOURLY",
+    "cron_expression": "0 * * * *"
+},
+{
+    "id": 3,
+    "job_name": "FILE_SCAN_NIELSEN",
+    "description": "Run Every 15 Minutes",
+    "workflow_to_invoke": "AWS_S3_FILE_CHECK",
+    "bucket_location": "com-njoy-data-transfers",
+    "folder_location": "transfers/nielsen/",
+    "file_prefix": "Njoy_Weekly_fct_",
+    "additional_filter_required": 1,
+    "additional_filter_value": "raw",
+    "expeceted_new_file_count" : 1,
+    "scan_type_category": "DAILY",
+    "cron_expression": "0/1 * * * *"
+},
+{
+    "id": 4,
+    "job_name": "FILE_SCAN_NIELSEN",
+    "description": "Run Every 15 Minutes",
+    "workflow_to_invoke": "AWS_S3_FILE_CHECK",
+    "bucket_location": "com-njoy-data-transfers",
+    "folder_location": "transfers/nielsen/",
+    "file_prefix": "Njoy_Weekly_fct_",
+    "additional_filter_required": 1,
+    "additional_filter_value": "raw",
+    "expeceted_new_file_count" : 1,
+    "scan_type_category": "WEEKLY",
+    "cron_expression": "5 8 * * 7"
+}
+]

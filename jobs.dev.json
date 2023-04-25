@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "job_name": "FILE_SCAN_MES_IOT_POD_MACHINEALARMLOG",
+        "description": "Every day at 5am UTC",
+        "bucket_location": "com-njoy-data-transfers",
+        "folder_location": "transfers/mes/",
+        "file_prefix": "IoT_POD_MachineAlarmLog_",
+        "scan_type_category": "DAILY",
+        "additional_filter_value": "",
+        "expected_new_file_count": 1,
+        "additional_filter_required": 0,
+        "workflow_to_invoke": "AWS_S3_FILE_CHECK",
+        "cron_expression": "0/3 * * * *"
+    },
+    {
+        "id": 2,
+        "job_name": "FILE_SCAN_NIELSEN",
+        "description": "Run Every Monday at 4:00 AM",
+        "workflow_to_invoke": "AWS_S3_FILE_CHECK",
+        "bucket_location": "com-njoy-data-transfers",
+        "folder_location": "transfers/nielsen/",
+        "file_prefix": "Njoy_Weekly_fct_",
+        "additional_filter_required": 1,
+        "additional_filter_value": "raw",
+        "expected_new_file_count" : 1,
+        "scan_type_category": "WEEKLY",
+        "cron_expression": "0/1  *  *  *  *"
+    }
+]

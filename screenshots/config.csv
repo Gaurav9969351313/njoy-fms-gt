@@ -1,0 +1,26 @@
+id,job_name,description,bucket_location,folder_location,file_prefix,scan_type_category,cron_expression,additional_filter_value,expeceted_new_file_count,additional_filter_required,workflow_to_invoke
+1,FILE_SCAN_MES_IOT_POD_MACHINEALARMLOG,Every day at 5am UTC,com-njoy-data-transfers,transfers/mes/,IoT_POD_MachineAlarmLog_,DAILY,0 5 * * *,,1,0,AWS_S3_FILE_CHECK
+2,FILE_SCAN_MES_IOT_POD_MACHINEOUTPUTDATA,Every day at 5am UTC,com-njoy-data-transfers,transfers/mes/,IoT_POD_MachineOutPutData_,DAILY,0 5 * * *,,1,0,AWS_S3_FILE_CHECK
+3,FILE_SCAN_MES_IOT_POD_PRODUCTIONDATA,Every day at 5am UTC,com-njoy-data-transfers,transfers/mes/,IoT_POD_ProductionData_,DAILY,0 5 * * *,,1,0,AWS_S3_FILE_CHECK
+4,FILE_SCAN_MES_IOT_POD_MACHINESSS,Every day at 5am UTC,com-njoy-data-transfers,transfers/mes/,IoT_POD_MachineSSS_,DAILY,0 5 * * *,,1,0,AWS_S3_FILE_CHECK
+5,FILE_SCAN_NIELSEN,Every week at 5am UTC on Monday,com-njoy-data-transfers,transfers/nielsen/,Njoy_Weekly_fct_,WEEKLY,0 5 * * 1,raw,1,1,AWS_S3_FILE_CHECK
+6,FILE_SCAN_UNITED_PACIFIC,Every week at 2pm UTC on Wednesday,com-njoy-data-transfers,transfers/unitedpacfic/,NJoy_UnitedPacific_,WEEKLY,0 14 * * 3,,1,0,AWS_S3_FILE_CHECK
+7,FILE_SCAN_SHEETZ,Every week at 4pm UTC on Monday,com-njoy-data-transfers,transfers/sheetz/,Sheetz OH,WEEKLY,0 16 * * 1,,1,0,AWS_S3_FILE_CHECK
+8,FILE_SCAN_MRWILLIAMS,Every week at 4pm UTC on Monday,com-njoy-data-transfers,transfers/mrwilliams/,NJOY Inventory Report,WEEKLY,0 16 * * 1,,1,0,AWS_S3_FILE_CHECK
+9,FILE_SCAN_IMPERIAL,Every week at 4pm UTC on Monday,com-njoy-data-transfers,transfers/imperial/,Imperial Trading-Weekly QOH-,WEEKLY,0 16 * * 1,,1,0,AWS_S3_FILE_CHECK
+10,FILE_SCAN_HUB_TOBACCO,Every week at 5pm UTC on Monday,com-njoy-data-transfers,transfers/hub-tobacco/,NJOY Inventory Report,WEEKLY,0 17 * * 1,,1,0,AWS_S3_FILE_CHECK
+11,FILE_SCAN_HUB_TOBACCO_GALENA,Every week at 5pm UTC on Monday,com-njoy-data-transfers,transfers/hub-tobacco/,NJOY Inventory Galena Report,WEEKLY,0 17 * * 1,,1,0,AWS_S3_FILE_CHECK
+12,FILE_SCAN_EBY,Every week at 5pm UTC on Monday,com-njoy-data-transfers,transfers/eby/,NJOY Inventory,WEEKLY,0 17 * * 1,,1,0,AWS_S3_FILE_CHECK
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,105105,,,,,,,
