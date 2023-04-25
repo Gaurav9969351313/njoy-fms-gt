@@ -36,7 +36,7 @@ pipeline {
 
         stage('Deploy Prefect Flow') {
             steps {
-                 bat "prefect --version"
+                 bat "C:\\Users\\GauravTalele\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\prefect.exe --version"
             }
         }
 
