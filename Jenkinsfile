@@ -7,6 +7,10 @@ pipeline {
     //     }
     // }
 
+    environment {
+        PATH = "C:\\WINDOWS\\SYSTEM32"
+    }
+
     stages {
         stage('Clean Workspace'){
             steps {
