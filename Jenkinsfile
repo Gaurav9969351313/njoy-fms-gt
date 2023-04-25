@@ -10,7 +10,12 @@ pipeline {
         stage('Clean Workspace'){
             steps {
                 cleanWs()
+            }
         }
+
+        stage('Initialize'){
+            def dockerHome = tool 'myDocker'
+            env.PATH = "${dockerHome}/bin:${env.PATH}"
         }
 
         stage ('checkout'){
