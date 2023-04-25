@@ -19,11 +19,12 @@ pipeline {
             }
         }
 
-        stage('Environment preparation') {
+        stage('Build') {
             steps {
-                echo "-=- preparing project environment -=-"
-                // Python dependencies
-                sh "pip install -r requirements.txt"
+                sh 'python -m venv env'
+                sh '. env/bin/activate'
+                sh 'pip install -r requirements.txt'
+                sh 'python setup.py install'
             }
         }
     }
