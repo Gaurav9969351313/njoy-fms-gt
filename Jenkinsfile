@@ -22,10 +22,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'python -m venv env'
-                sh '. env/bin/activate'
-                sh 'pip install -r requirements.txt'
-                sh 'python setup.py install'
+                bat "python -m venv venv"
+                bat "venv\\Scripts\\activate.bat"
+                bat "python -m pip install --upgrade pip"
+                bat "pip install -r requirements.txt"
             }
         }
     }
