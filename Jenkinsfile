@@ -1,10 +1,11 @@
 pipeline {
-    agent {
-        docker { 
-            image "python:3.8"
-            args '--user 0:0'
-        }
-    }
+    agent any
+    // agent {
+    //     docker { 
+    //         image "python:3.8"
+    //         args '--user 0:0'
+    //     }
+    // }
 
     stages {
         stage('Clean Workspace'){
